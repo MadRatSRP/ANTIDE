@@ -1,1 +1,1 @@
-include ':app', ':nativesyntax'
+include ':idea_example', ':idea'

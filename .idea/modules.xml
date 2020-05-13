@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IDEAndroidTools.iml" filepath="$PROJECT_DIR$/IDEAndroidTools.iml" group="IDEAndroidTools" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="IDEAndroidTools/app" />
-      <module fileurl="file://$PROJECT_DIR$/nativesyntax/nativesyntax.iml" filepath="$PROJECT_DIR$/nativesyntax/nativesyntax.iml" group="IDEAndroidTools/nativesyntax" />
+      <module fileurl="file://$PROJECT_DIR$/idea/idea.iml" filepath="$PROJECT_DIR$/idea/idea.iml" group="IDEAndroidTools/idea" />
+      <module fileurl="file://$PROJECT_DIR$/idea_example/idea_example.iml" filepath="$PROJECT_DIR$/idea_example/idea_example.iml" group="IDEAndroidTools/idea_example" />
     </modules>
   </component>
 </project>
