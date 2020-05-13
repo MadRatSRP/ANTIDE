@@ -2,7 +2,7 @@ package com.vic797.syntaxhighlight;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

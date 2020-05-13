@@ -1,6 +1,6 @@
 package com.vic797.edittextutils;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.widget.Toast;
