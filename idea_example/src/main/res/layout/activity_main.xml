@@ -8,12 +8,12 @@
 
     <com.vic797.syntaxhighlight.LineCountLayout
         app:numberSize="15sp"
-        android:id="@+id/line_layout"
+        android:id="@+id/line_count_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.vic797.syntaxhighlight.SyntaxHighlighter
-            android:id="@+id/edit_text"
+            android:id="@+id/syntax_highlighter"
             android:padding="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

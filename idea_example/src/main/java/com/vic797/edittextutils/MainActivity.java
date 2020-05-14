@@ -1,25 +1,31 @@
 package com.vic797.edittextutils;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
+import android.view.View;
 import android.widget.Toast;
 
-import com.vic797.syntaxhighlight.LineCountLayout;
-import com.vic797.syntaxhighlight.SyntaxHighlighter;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.vic797.edittextutils.databinding.ActivityMainBinding;
 import com.vic797.syntaxhighlight.SyntaxListener;
 
 public class MainActivity extends AppCompatActivity implements SyntaxListener{
+    // ViewBinding variable
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        LineCountLayout layout = findViewById(R.id.line_layout);
-        SyntaxHighlighter editText = findViewById(R.id.edit_text);
-        editText.addSyntax(getAssets(), "java.json");
-        layout.attachEditText(editText);
-        editText.startHighlight(false);
+
+        // ViewBinding initialization
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        View view = binding.getRoot();
+        setContentView(view);
+
+        binding.syntaxHighlighter.addSyntax(getAssets(), "java.json");
+        binding.lineCountLayout.attachEditText(binding.syntaxHighlighter);
+        binding.syntaxHighlighter.startHighlight(false);
     }
 
     @SuppressWarnings("unused")
@@ -215,9 +221,9 @@ public class MainActivity extends AppCompatActivity implements SyntaxListener{
     }
 
     @Override
-    public void onError(Exception e) {
+    public void onError(Exception exception) {
         //When an Exception occurs
-        e.printStackTrace();
+        exception.printStackTrace();
         Toast.makeText(this, "An error has occurred!", Toast.LENGTH_SHORT).show();
     }
 }
