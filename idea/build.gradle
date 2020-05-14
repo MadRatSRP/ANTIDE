@@ -25,22 +25,25 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     // Jetpack
-    def appCompatVersion = "1.0.0"
+    def appCompatVersion = '1.1.0'
 
     // Testing
     // Junit
-    def junitVersion = "4.12"
+    def junitVersion = '4.13'
     // JunitRunner
     def junitRunnerVersion = "1.1.1"
     // Espresso
-    def espressoVersion = "3.1.0"
+    def espressoVersion = '3.2.0'
 
 
     // Jetpack
     implementation "androidx.appcompat:appcompat:$appCompatVersion"
 
     // Testing
+    // Junit
     testImplementation "junit:junit:$junitVersion"
+    // JunitRunner
     androidTestImplementation "androidx.test.ext:junit:$junitRunnerVersion"
+    // Espresso
     androidTestImplementation "androidx.test.espresso:espresso-core:$espressoVersion"
 }

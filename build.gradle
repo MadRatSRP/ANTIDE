@@ -9,7 +9,7 @@ buildscript {
 
 
         // Gradle
-        classpath "com.android.tools.build:gradle:$gradleVersion"
+        classpath "com.android.tools.build:gradle:${gradleVersion}"
     }
 }
 
