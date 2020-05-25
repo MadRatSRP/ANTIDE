@@ -1,0 +1,18 @@
+# directories
+# project directory
+.PVS-Studio
+.idea
+.gradle
+build
+gradle
+
+# idea module directory
+idea/build
+
+# idea_example module directory
+idea_example/build
+
+
+# files
+*.iml
+*local.properties
