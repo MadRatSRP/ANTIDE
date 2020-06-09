@@ -5,7 +5,7 @@ buildscript {
     }
     dependencies {
         // Gradle
-        ext.gradleVersion = "3.6.3"
+        ext.gradleVersion = '4.0.0'
 
 
         // Gradle

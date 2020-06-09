@@ -1,1 +1,1 @@
-include ':idea_example', ':idea'
+include ':antide_example', ':antide'

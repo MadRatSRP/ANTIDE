@@ -10,7 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.vic797.edittextutils.databinding.ActivityMainBinding;
 import com.vic797.syntaxhighlight.SyntaxListener;
 
-public class MainActivity extends AppCompatActivity implements SyntaxListener{
+public class MainActivity
+        extends AppCompatActivity
+        implements SyntaxListener {
     // ViewBinding variable
     private ActivityMainBinding binding;
 
